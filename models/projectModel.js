@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const Project = new Schema({
+const ProjectSchema = new Schema({
   name: {
     type: String,
     required: true
@@ -20,8 +20,10 @@ const Project = new Schema({
   },
   description: {
     type: String,
-    required: true
+    default: "No description available yet"
   }
 });
+
+var Project = mongoose.model("Project", ProjectSchema);
 
 module.exports = Project;

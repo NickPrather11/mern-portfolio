@@ -1,6 +1,11 @@
-import Project from "../models/projectModel";
-
 const projectsArray = [
+  {
+    name: "NC Breweries Project",
+    image: "/client/public/images/Brewery_Project.PNG",
+    deployedLink: "https://adishthapa.github.io/UNCBootcamp-Project01/",
+    githubLink: "github.com/adishthapa/UNCBootcamp-Project01",
+    description: ""
+  },
   {
     name: "Gluttony Game",
     image: "/client/public/images/Gluttony_Game.PNG",
@@ -13,7 +18,7 @@ const projectsArray = [
     name: "Lebowski Trivia",
     image: "/client/public/images/Lebowski_Trivia.PNG",
     deployedLink: "https://nickprather11.github.io/TriviaGame/",
-    githubLink: "",
+    githubLink: "https://github.com/NickPrather11/TriviaGame",
     description: ""
   },
   {
@@ -27,7 +32,7 @@ const projectsArray = [
     name: "Eat Da Burger!",
     image: "/client/public/images/burger_devourer.PNG",
     deployedLink: "https://stark-eyrie-85216.herokuapp.com/",
-    githubLink: "",
+    githubLink: "https://github.com/NickPrather11/burger",
     description: ""
   },
   {
@@ -41,28 +46,30 @@ const projectsArray = [
     name: "The Hard Times Scraper",
     image: "/client/public/images/hardTimesScraper.PNG",
     deployedLink: "https://stark-tor-89874.herokuapp.com/",
-    githubLink: "",
+    githubLink: "https://github.com/NickPrather11/mongo-scraper",
     description: ""
   },
   {
     name: "Cloud Clicker Game",
     image: "/client/public/images/cloud_clicker.PNG",
     deployedLink: "https://evening-crag-14153.herokuapp.com/",
-    githubLink: "",
+    githubLink: "https://github.com/NickPrather11/clicky-game",
     description: ""
   },
   {
     name: "Google Books Search",
     image: "/client/public/images/book_search.PNG",
     deployedLink: "https://serene-beyond-02883.herokuapp.com/",
-    githubLink: "",
+    githubLink: "https://github.com/NickPrather11/book-search",
     description: ""
   },
   {
     name: "Texas Hold 'Em Poker",
     image: "/client/public/images/poker.PNG",
     deployedLink: "https://warm-garden-85112.herokuapp.com/",
-    githubLink: "",
+    githubLink: "https://github.com/adishthapa/UNCBootcamp-Project03",
     description: ""
   }
 ];
+
+module.exports = projectsArray;

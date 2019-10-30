@@ -3,6 +3,8 @@ const mongoose = require("mongoose");
 const routes = require("./routers");
 const PORT = process.env.PORT || 3001;
 const app = express();
+const Project = require("./models/projectModel");
+const projectsArray = require("./controllers/seedBuilder");
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
@@ -16,9 +18,18 @@ if (process.env.NODE_ENV === "production") {
 // Define API routes here
 app.use(routes);
 
-mongoose.connect(process.env.MONGODB_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
+// Connect to MongoDB
+mongoose.connect("mongodb://localhost/portfolio", { useNewUrlParser: true });
+
+//Build seeds
+projectsArray.forEach(item => {
+  Project.create(item)
+    .then(dbProject => {
+      console.log(dbProject);
+    })
+    .catch(err => {
+      console.log(err.message);
+    });
 });
 
 //asigned listener to a variable
