@@ -23,6 +23,7 @@ mongoose.connect("mongodb://localhost/portfolio", { useNewUrlParser: true });
 
 //Build seeds
 projectsArray.forEach(item => {
+  // add code to search the database for item.name and only create if it doesn't exist
   Project.create(item)
     .then(dbProject => {
       console.log(dbProject);
