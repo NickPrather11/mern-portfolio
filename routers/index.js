@@ -1,5 +1,3 @@
-// Having a separate api folder here may not be necessary
-
 const path = require("path");
 const router = require("express").Router();
 const apiRoutes = require("./api");
