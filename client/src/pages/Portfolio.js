@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import API from "../utils/API";
+import { Col, Row, Container } from "../components/Grid";
 
 class Portfolio extends Component {
   state = {
@@ -17,7 +18,14 @@ class Portfolio extends Component {
   };
 
   render() {
-    return console.log(this.state.projects);
+    console.log(this.state.projects);
+    return (
+      <Container fluid>
+        <div>
+          <h1>Portfolio Page</h1>
+        </div>
+      </Container>
+    );
   }
 }
 
