@@ -4,7 +4,7 @@ const routes = require("./routers");
 const PORT = process.env.PORT || 3001;
 const app = express();
 const Project = require("./models/projectModel");
-const projectsArray = require("./controllers/seedBuilder");
+const projectsArray = require("./db/projectsObj");
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
