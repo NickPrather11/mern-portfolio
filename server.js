@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const routes = require("./routers");
 const PORT = process.env.PORT || 3001;
 const app = express();
-const Project = require("./models/projectModel");
+const Project = require("./models/project");
 const projectsArray = require("./db/projectsObj");
 
 // Define middleware here
