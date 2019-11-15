@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import API from "../utils/API";
-import { Col, Row, Container } from "../components/Grid";
+import { Container } from "../components/Grid";
+import ProjectLink from "../components/ProjectLink";
 
 class Portfolio extends Component {
   state = {
@@ -23,6 +24,11 @@ class Portfolio extends Component {
       <Container fluid>
         <div>
           <h1>Portfolio Page</h1>
+        </div>
+        <div className="projectLinks">
+          {this.state.projects.map(project => (
+            <ProjectLink key={project._id} project={project} />
+          ))}
         </div>
       </Container>
     );
