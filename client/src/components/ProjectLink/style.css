@@ -1,0 +1,16 @@
+.linkObj {
+  width: 15rem;
+  margin: 2rem;
+}
+
+img {
+  width: 100%;
+}
+
+.label {
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  background: #4aaaa5;
+  padding: 0.2rem;
+}

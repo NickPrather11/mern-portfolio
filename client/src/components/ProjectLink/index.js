@@ -1,11 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./style.css";
 
 function ProjectLink({ project }) {
+  const images = require.context("../../../../client/public/images", true);
+  let image = project.image;
   return (
-    <div>
-      <img src={project.image} alt="https://via.placeholder.com/150" />
-      <Link to="/projects">{project.name}</Link>
+    <div className="linkObj">
+      <Link to="/projects">
+        <img src={images(image)} alt="https://via.placeholder.com/150" />
+        <div className="label">{project.name}</div>
+      </Link>
     </div>
   );
 }

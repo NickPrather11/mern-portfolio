@@ -25,7 +25,7 @@ class Portfolio extends Component {
         <div>
           <h1>Portfolio Page</h1>
         </div>
-        <div className="projectLinks">
+        <div className="projectLinks" display="flex">
           {this.state.projects.map(project => (
             <ProjectLink key={project._id} project={project} />
           ))}
