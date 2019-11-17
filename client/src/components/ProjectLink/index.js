@@ -4,7 +4,7 @@ import "./style.css";
 
 function ProjectLink({ project }) {
   const images = require.context("../../../../client/public/images", true);
-  let image = project.image;
+  let image = "./" + project.image;
   let link = "/projects/" + project._id;
   return (
     <div className="linkObj">
