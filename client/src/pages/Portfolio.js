@@ -3,6 +3,12 @@ import API from "../utils/API";
 import { Container } from "../components/Grid";
 import ProjectLink from "../components/ProjectLink";
 
+const linksDivStyling = {
+  display: "flex",
+  flexWrap: "wrap",
+  justifyContent: "center"
+};
+
 class Portfolio extends Component {
   state = {
     projects: []
@@ -25,7 +31,7 @@ class Portfolio extends Component {
         <div>
           <h1>Portfolio Page</h1>
         </div>
-        <div className="projectLinks" display="flex">
+        <div className="projectLinks" style={linksDivStyling}>
           {this.state.projects.map(project => (
             <ProjectLink key={project._id} project={project} />
           ))}
