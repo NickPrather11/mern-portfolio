@@ -5,9 +5,10 @@ import "./style.css";
 function ProjectLink({ project }) {
   const images = require.context("../../../../client/public/images", true);
   let image = project.image;
+  let link = "/projects/" + project._id;
   return (
     <div className="linkObj">
-      <Link to="/projects">
+      <Link to={link} project={project}>
         <img src={images(image)} alt="https://via.placeholder.com/150" />
         <div className="label">{project.name}</div>
       </Link>
