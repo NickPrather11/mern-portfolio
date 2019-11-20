@@ -7,7 +7,7 @@ class ProjectCard extends Component {
     const images = require.context("../../../../client/public/images", true);
     let image = "./" + project.image;
     return (
-      <div>
+      <div className="cardContainer">
         <div id="name">
           <h1>{project.name}</h1>
         </div>

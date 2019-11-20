@@ -1,3 +1,11 @@
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
 .imgStyle {
   width: 30rem;
+  align-self: center;
 }
