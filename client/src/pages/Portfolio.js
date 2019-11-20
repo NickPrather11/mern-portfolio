@@ -13,9 +13,6 @@ class Portfolio extends Component {
     const { projects, loadProject } = this.props;
     return (
       <Container fluid>
-        <div>
-          <h1>Portfolio Page</h1>
-        </div>
         <div className="projectLinks" style={linksDivStyling}>
           {projects.map(project => (
             <ProjectLink key={project._id} project={project} loadProject={loadProject} />

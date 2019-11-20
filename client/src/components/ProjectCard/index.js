@@ -2,16 +2,8 @@ import React, { Component } from "react";
 import "./style.css";
 
 class ProjectCard extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      project: this.props.project
-    };
-  }
-
   render() {
-    const { project } = this.state;
+    const { project } = this.props;
     const images = require.context("../../../../client/public/images", true);
     let image = "./" + project.image;
     return (
@@ -22,11 +14,13 @@ class ProjectCard extends Component {
         <div className="imgStyle">
           <img src={project.image ? images(image) : ""} alt="https://via.placeholder.com/150" />
         </div>
-        <div id="description"></div>
+        <div id="description">
+          <p>{project.description}</p>
+        </div>
         <div id="extLinks">
           <div>
             <a href={project.deployedLink} target="_blank">
-              <h3>Try it out</h3>
+              <h3>Try out the app</h3>
             </a>
           </div>
           <div>
