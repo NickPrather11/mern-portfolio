@@ -10,12 +10,12 @@ const linksDivStyling = {
 
 class Portfolio extends Component {
   render() {
-    const { projects, loadProject } = this.props;
+    const { projects } = this.props;
     return (
       <Container fluid>
         <div className="projectLinks" style={linksDivStyling}>
           {projects.map(project => (
-            <ProjectLink key={project._id} project={project} loadProject={loadProject} />
+            <ProjectLink key={project._id} project={project} />
           ))}
         </div>
       </Container>

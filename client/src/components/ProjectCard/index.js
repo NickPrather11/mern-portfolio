@@ -25,7 +25,7 @@ class ProjectCard extends Component {
           </div>
           <div>
             <a href={project.githubLink} target="_blank">
-              <h3>Check out the code</h3>
+              <h3>Check out the code on GitHub</h3>
             </a>
           </div>
         </div>
