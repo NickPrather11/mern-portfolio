@@ -9,7 +9,9 @@ import Nav from "./components/Nav";
 
 const headerStyle = {
   textAlign: "center",
-  marginTop: "2rem"
+  marginTop: "2rem",
+  fontFamily: "Noto Serif Libre, serif",
+  lineHeight: "2"
 };
 
 class App extends Component {
