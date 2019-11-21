@@ -7,6 +7,11 @@ import AboutMe from "./pages/AboutMe";
 import ProjectPage from "./pages/ProjectPage";
 import Nav from "./components/Nav";
 
+const headerStyle = {
+  textAlign: "center",
+  marginTop: "2rem"
+};
+
 class App extends Component {
   state = {
     projects: []
@@ -28,6 +33,9 @@ class App extends Component {
       <Router>
         <div>
           <Nav />
+          <div>
+            <h1 style={headerStyle}>NICK PRATHER</h1>
+          </div>
           <Route exact path="/">
             <Portfolio projects={projects} />
           </Route>

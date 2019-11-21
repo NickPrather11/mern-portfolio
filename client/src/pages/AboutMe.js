@@ -14,7 +14,7 @@ class AboutMe extends Component {
     const bioImg = images("./bio_image.jpg");
     return (
       <Container fluid>
-        <img id="bioPic" src={bioImg} style={bioPicStyle} />
+        <img id="bioPic" src={bioImg} style={bioPicStyle} alt="https://via.placeholder.com/150" />
 
         <p>
           As a Web Developer with a diverse background, I look forward to applying my varied experiences as a valuable

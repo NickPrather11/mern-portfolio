@@ -9,7 +9,7 @@ function ProjectLink({ project }) {
   return (
     <div className="linkObj">
       <Link to={link} project={project}>
-        <img src={images(image)} alt="https://via.placeholder.com/150" />
+        <img src={project.image ? images(image) : ""} alt="https://via.placeholder.com/150" />
         <div className="label">{project.name}</div>
       </Link>
     </div>

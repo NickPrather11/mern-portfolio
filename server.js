@@ -4,9 +4,6 @@ const app = express();
 const mongoose = require("mongoose");
 const routes = require("./routers");
 
-// const Project = require("./models/project");
-// const projectsArray = require("./db/projectsObj");
-
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -20,21 +17,7 @@ if (process.env.NODE_ENV === "production") {
 app.use(routes);
 
 // Connect to MongoDB
-mongoose.connect("mongodb://localhost/portfolio", { useNewUrlParser: true });
-
-//  *** BUILD SEEDS ***
-// *** maybe just add and update manually? ***
-
-// projectsArray.forEach(item => {
-//   // add code to search the database for item.name and only create if it doesn't exist
-//   Project.create(item)
-//     .then(dbProject => {
-//       console.log(dbProject);
-//     })
-//     .catch(err => {
-//       console.log(err.message);
-//     });
-// });
+mongoose.connect("mongodb://localhost/portfolio", { useNewUrlParser: true, useFindAndModify: false });
 
 //asigned listener to a variable
 app.listen(PORT, () => {

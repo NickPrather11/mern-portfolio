@@ -9,7 +9,7 @@ function Nav() {
       </a>
       <h1 className="text-light">|</h1>
       <a className="navbar-brand" id="portfolio" href="/">
-        Portfolio
+        Projects
       </a>
       <h1 className="text-light">|</h1>
       <a className="navbar-brand" id="contact" href="/contact">

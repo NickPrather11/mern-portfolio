@@ -1,15 +1,15 @@
 const projectsArray = [
   {
     name: "NC Breweries Project",
-    image: "/client/public/images/Brewery_Project.PNG",
-    deployedLink: "https://adishthapa.github.io/UNCBootcamp-Project01/",
-    githubLink: "github.com/adishthapa/UNCBootcamp-Project01",
+    image: "Brewery_Project.PNG",
+    deployedLink: "https://adishthapa.com/carolina-brew-review",
+    githubLink: "github.com/adishthapa/carolina-brew-review",
     description:
       "A brewery tracking application that shows breweries located throughout North Carolina and their most popular beers. Sign up or log in to add a brewery to your Favorites by clicking the star next to the brewery name."
   },
   {
     name: "Gluttony Game",
-    image: "/client/public/images/Gluttony_Game.PNG",
+    image: "Gluttony_Game.PNG",
     deployedLink: "https://nickprather11.github.io/unit-4-game/",
     githubLink: "https://github.com/NickPrather11/unit-4-game",
     description:
@@ -17,7 +17,7 @@ const projectsArray = [
   },
   {
     name: "Lebowski Trivia",
-    image: "/client/public/images/Lebowski_Trivia.PNG",
+    image: "Lebowski_Trivia.PNG",
     deployedLink: "https://nickprather11.github.io/TriviaGame/",
     githubLink: "https://github.com/NickPrather11/TriviaGame",
     description:
@@ -25,15 +25,15 @@ const projectsArray = [
   },
   {
     name: "LIRI Node App",
-    image: "/client/public/images/LIRI-movie-this.PNG",
-    deployedLink: "https://github.com/NickPrather11/liri-node-app",
+    image: "LIRI-movie-this.PNG",
+    deployedLink: "https://nickprather11.github.io/liri-node-app",
     githubLink: "https://github.com/NickPrather11/liri-node-app",
     description:
       "The LIRI node app is used to search for info on movies, songs, and concerts. It makes use of the Online Movie Database (OMDB), Spotify, and Bandsintown API's to acheive this. To run this app, you must clone the repo from https://github.com/NickPrather11/liri-node-app.git and run it in your CLI. Checkout the readme file on the GitHub page linked below for more detailed instructions."
   },
   {
     name: "Eat Da Burger!",
-    image: "/client/public/images/burger_devourer.PNG",
+    image: "burger_devourer.PNG",
     deployedLink: "https://stark-eyrie-85216.herokuapp.com/",
     githubLink: "https://github.com/NickPrather11/burger",
     description:
@@ -41,7 +41,7 @@ const projectsArray = [
   },
   {
     name: "Dream Journal",
-    image: "/client/public/images/dream_journal.PNG",
+    image: "dream_journal.PNG",
     deployedLink: "https://cryptic-badlands-56041.herokuapp.com/",
     githubLink: "https://github.com/NickPrather11/Project2",
     description:
@@ -49,7 +49,7 @@ const projectsArray = [
   },
   {
     name: "The Hard Times Scraper",
-    image: "/client/public/images/hardTimesScraper.PNG",
+    image: "hardTimesScraper.PNG",
     deployedLink: "https://stark-tor-89874.herokuapp.com/",
     githubLink: "https://github.com/NickPrather11/mongo-scraper",
     description:
@@ -57,7 +57,7 @@ const projectsArray = [
   },
   {
     name: "Cloud Clicker Game",
-    image: "/client/public/images/cloud_clicker.PNG",
+    image: "cloud_clicker.PNG",
     deployedLink: "https://evening-crag-14153.herokuapp.com/",
     githubLink: "https://github.com/NickPrather11/clicky-game",
     description:
@@ -65,7 +65,7 @@ const projectsArray = [
   },
   {
     name: "Google Books Search",
-    image: "/client/public/images/book_search.PNG",
+    image: "book_search.PNG",
     deployedLink: "https://serene-beyond-02883.herokuapp.com/",
     githubLink: "https://github.com/NickPrather11/book-search",
     description:
@@ -73,7 +73,7 @@ const projectsArray = [
   },
   {
     name: "Texas Hold 'Em Poker",
-    image: "/client/public/images/poker.PNG",
+    image: "poker.PNG",
     deployedLink: "https://warm-garden-85112.herokuapp.com/",
     githubLink: "https://github.com/adishthapa/UNCBootcamp-Project03",
     description:

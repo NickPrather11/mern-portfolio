@@ -19,12 +19,12 @@ class ProjectCard extends Component {
         </div>
         <div id="extLinks">
           <div>
-            <a href={project.deployedLink} target="_blank">
+            <a href={project.deployedLink} target="_blank" rel="noopener noreferrer">
               <h3>Try out the app</h3>
             </a>
           </div>
           <div>
-            <a href={project.githubLink} target="_blank">
+            <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
               <h3>Check out the code on GitHub</h3>
             </a>
           </div>

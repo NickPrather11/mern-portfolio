@@ -20,13 +20,13 @@ class Contact extends Component {
           </div>
           <br />
           <div id="linkedin">
-            <a href="https://www.linkedin.com/in/nick-prather-945109101/" target="_blank">
+            <a href="https://www.linkedin.com/in/nick-prather-945109101/" target="_blank" rel="noopener noreferrer">
               <h4>LinkedIn Profile</h4>
             </a>
           </div>
           <br />
           <div id="githublink">
-            <a href="https://github.com/NickPrather11" target="_blank">
+            <a href="https://github.com/NickPrather11" target="_blank" rel="noopener noreferrer">
               <h4>GitHub Profile</h4>
             </a>
           </div>
