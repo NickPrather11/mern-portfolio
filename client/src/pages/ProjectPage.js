@@ -2,7 +2,7 @@
 import React, { Component } from "react";
 import { Container } from "../components/Grid";
 import ProjectCard from "../components/ProjectCard";
-import axios from "axios";
+import API from "../utils/API";
 
 class ProjectPage extends Component {
   state = {
@@ -15,7 +15,7 @@ class ProjectPage extends Component {
 
   loadProject = () => {
     let id = window.location.href.slice(31);
-    axios.get("/api/projects/" + id).then(res => {
+    API.getProject(id).then(res => {
       this.setState({ project: res.data });
     });
   };
@@ -25,6 +25,7 @@ class ProjectPage extends Component {
     console.log("Project: ", project);
     return (
       <Container fluid>
+        <a href="/">&lt;&lt;&lt; Return to Projects page</a>
         <ProjectCard project={project} />
       </Container>
     );
