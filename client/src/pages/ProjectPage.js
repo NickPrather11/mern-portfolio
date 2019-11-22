@@ -10,11 +10,12 @@ class ProjectPage extends Component {
   };
 
   componentDidMount() {
-    this.loadProject();
+    let URL = window.location.href;
+    let id = URL.slice(URL.length - 24);
+    this.loadProject(id);
   }
 
-  loadProject = () => {
-    let id = window.location.href.slice(31);
+  loadProject = id => {
     API.getProject(id).then(res => {
       this.setState({ project: res.data });
     });
@@ -22,7 +23,6 @@ class ProjectPage extends Component {
 
   render() {
     const { project } = this.state;
-    console.log("Project: ", project);
     return (
       <Container fluid>
         <a href="/">&lt;&lt;&lt; Return to Projects page</a>

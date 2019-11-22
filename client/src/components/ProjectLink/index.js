@@ -8,7 +8,7 @@ function ProjectLink({ project }) {
   let link = "/projects/" + project._id;
   return (
     <div className="linkObj">
-      <Link to={link} project={project}>
+      <Link to={link}>
         <img src={project.image ? images(image) : ""} alt="https://via.placeholder.com/150" />
         <div className="label">{project.name}</div>
       </Link>
