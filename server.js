@@ -17,7 +17,10 @@ if (process.env.NODE_ENV === "production") {
 app.use(routes);
 
 // Connect to MongoDB
-mongoose.connect("mongodb://localhost/portfolio", { useNewUrlParser: true, useFindAndModify: false });
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/portfolio", {
+  useNewUrlParser: true,
+  useFindAndModify: false
+});
 
 //asigned listener to a variable
 app.listen(PORT, () => {
