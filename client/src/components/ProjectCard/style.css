@@ -4,12 +4,24 @@
   flex-direction: column;
   text-align: center;
   margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 
 .imgStyle {
   width: 30rem;
   margin: 1rem;
   align-self: center;
+}
+
+#ghLink {
+  display: flex;
+  justify-content: center;
+  flex-flow: row nowrap;
+}
+
+#ghLogo {
+  width: 3rem;
+  margin-right: 1rem;
 }
 
 p {

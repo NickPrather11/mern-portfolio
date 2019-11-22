@@ -9,9 +9,9 @@ import Nav from "./components/Nav";
 
 const headerStyle = {
   textAlign: "center",
-  marginTop: "2rem",
-  fontFamily: "Noto Serif Libre, serif",
-  lineHeight: "2"
+  fontFamily: "Monofett, cursive",
+  lineHeight: "1.5",
+  fontSize: "350%"
 };
 
 class App extends Component {
@@ -34,10 +34,11 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <Nav />
           <div>
-            <h1 style={headerStyle}>NICK PRATHER</h1>
+            <h1 style={headerStyle}>N I C K &nbsp;&nbsp; P R A T H E R</h1>
           </div>
+          <Nav />
+
           <Route exact path="/">
             <Portfolio projects={projects} />
           </Route>

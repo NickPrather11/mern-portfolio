@@ -2,12 +2,18 @@ import React, { Component } from "react";
 import { Container } from "../components/Grid";
 
 const contactStyle = {
-  textAlign: "center",
-  margin: "5rem"
-};
+    textAlign: "center",
+    margin: "5rem"
+  },
+  imgStyle = {
+    width: "7rem"
+  };
 
 class Contact extends Component {
   render() {
+    const logos = require.context("../../../client/public/images", true);
+    const githubImg = "./GitHub_Logo.png";
+    const linkedInImg = "./LI-Logo.png";
     return (
       <Container fluid>
         <div style={contactStyle}>
@@ -21,13 +27,13 @@ class Contact extends Component {
           <br />
           <div id="linkedin">
             <a href="https://www.linkedin.com/in/nick-prather-945109101/" target="_blank" rel="noopener noreferrer">
-              <h4>LinkedIn Profile</h4>
+              <img src={linkedInImg ? logos(linkedInImg) : ""} alt="https://via.placeholder.com/150" style={imgStyle} />
             </a>
           </div>
           <br />
           <div id="githublink">
             <a href="https://github.com/NickPrather11" target="_blank" rel="noopener noreferrer">
-              <h4>GitHub Profile</h4>
+              <img src={githubImg ? logos(githubImg) : ""} alt="https://via.placeholder.com/150" style={imgStyle} />
             </a>
           </div>
           <br />
