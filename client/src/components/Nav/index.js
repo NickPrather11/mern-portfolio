@@ -22,15 +22,7 @@ function Nav() {
       </MediaQuery>
       <MediaQuery maxWidth={404}>
         <nav className="navbar navbar-expand-sm navbar-static-top navbar-dark bg-secondary">
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#collapseMenu"
-            aria-controls="collapseMenu"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseMenu">
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="collapseMenu">

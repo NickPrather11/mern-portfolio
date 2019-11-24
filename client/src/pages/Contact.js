@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Container } from "../components/Grid";
+import MediaQuery from "react-responsive";
 
 const contactStyle = {
     textAlign: "center",
@@ -17,9 +18,17 @@ class Contact extends Component {
     return (
       <Container fluid>
         <div style={contactStyle}>
-          <div id="email">
-            <h2>Email: nickprather11@gmail.com</h2>
-          </div>
+          <MediaQuery minDeviceWidth={480}>
+            <div id="email">
+              <h2>Email: nickprather11@gmail.com</h2>
+            </div>
+          </MediaQuery>
+          <MediaQuery maxWidth={479}>
+            <div id="email">
+              <h2>Email: nickprather11 @gmail.com</h2>
+            </div>
+          </MediaQuery>
+
           <br />
           <div id="phone">
             <h2>Phone: 919-434-3043</h2>

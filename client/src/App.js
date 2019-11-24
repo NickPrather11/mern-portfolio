@@ -6,6 +6,7 @@ import Contact from "./pages/Contact";
 import AboutMe from "./pages/AboutMe";
 import ProjectPage from "./pages/ProjectPage";
 import Nav from "./components/Nav";
+import MediaQuery from "react-responsive";
 
 const headerStyle = {
   textAlign: "center",
@@ -34,9 +35,18 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <div>
-            <h1 style={headerStyle}>N I C K &nbsp;&nbsp; P R A T H E R</h1>
-          </div>
+          <MediaQuery minDeviceWidth={480}>
+            <div>
+              <h1 style={headerStyle}>N I C K &nbsp;&nbsp; P R A T H E R</h1>
+            </div>
+          </MediaQuery>
+          <MediaQuery maxWidth={479}>
+            <div style={headerStyle}>
+              <h1>N I C K</h1>
+              <h1>P R A T H E R</h1>
+            </div>
+          </MediaQuery>
+
           <Nav />
 
           <Route exact path="/">
