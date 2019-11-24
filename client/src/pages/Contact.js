@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import { Container } from "../components/Grid";
-import MediaQuery from "react-responsive";
 
 const contactStyle = {
     textAlign: "center",
-    margin: "5rem"
+    marginTop: "3rem"
   },
   imgStyle = {
     width: "7rem"
@@ -18,20 +17,14 @@ class Contact extends Component {
     return (
       <Container fluid>
         <div style={contactStyle}>
-          <MediaQuery minDeviceWidth={480}>
-            <div id="email">
-              <h2>Email: nickprather11@gmail.com</h2>
-            </div>
-          </MediaQuery>
-          <MediaQuery maxWidth={479}>
-            <div id="email">
-              <h2>Email: nickprather11 @gmail.com</h2>
-            </div>
-          </MediaQuery>
-
+          <div id="email">
+            <h2>Email: </h2>
+            <h3>nickprather11@gmail.com</h3>
+          </div>
           <br />
           <div id="phone">
-            <h2>Phone: 919-434-3043</h2>
+            <h2>Phone:</h2>
+            <h2>919-434-3043</h2>
           </div>
           <br />
           <div id="linkedin">
