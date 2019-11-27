@@ -3,7 +3,7 @@ const projectsArray = [
     name: "NC Breweries Project",
     image: "Brewery_Project.PNG",
     deployedLink: "https://adishthapa.com/carolina-brew-review",
-    githubLink: "github.com/adishthapa/carolina-brew-review",
+    githubLink: "https://github.com/adishthapa/carolina-brew-review",
     description:
       "A brewery tracking application that shows breweries located throughout North Carolina and their most popular beers. Sign up or log in to add a brewery to your Favorites by clicking the star next to the brewery name."
   },
